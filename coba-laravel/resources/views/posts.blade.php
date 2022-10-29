@@ -2,7 +2,7 @@
 
 @section('Container')
 
-<h1 class="mb-5">Halaman Blog Posts</h1>
+<h1 class="mb-5">{{ $title }}</h1>
 
 @foreach ($posts as $post)
 <article class="mb-5 border-bottom pb-4">
@@ -15,6 +15,8 @@
     <p>{{ $post->excerpt }}</p>
 
     <a href="/posts/{{ $post->slug }}" class="text-decoration-none">Read more..</a>
+    <a href="/blog/" class="d-block mt-3 text-decoration-none">Back to blog</a>
+
 </article> 
 @endforeach
    
