@@ -50,4 +50,4 @@
   </div>
 </div>
 
-
+<small class="d-block text-center mt-2"><a class=" text-decoration-none" href="/blog" >Back to  Blog</a></small>
