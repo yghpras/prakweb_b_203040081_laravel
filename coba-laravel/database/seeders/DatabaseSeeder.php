@@ -18,24 +18,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
-        
-        // AuthUser::create([
-        //     'name' => 'Yoghi Prasetiyo',
-        //     'email' => 'yoghi.203040081@mail.unpas.ac.id',
-        //     'password' => bcsqrt('12345')
-        // ]);
-
-        // AuthUser::create([
-        //     'name' => 'OkyBoy',
-        //     'email' => 'oky@gmail.com',
-        //     'password' => bcsqrt('12345')
-        // ]);
+        AuthUser::create([
+            'name' => 'Yoghi Prasetiyo',
+            'username' =>'yoghi',
+            'email' => 'yoghip2@gmail.com',
+            'password' => bcrypt('password')
+        ]);
 
         User::factory(3)->create();
 
