@@ -38,10 +38,8 @@
                   <button class="badge bg-danger border-0" onclick="return confirm('Are you sure?')"><span data-feather="x-circle"></span></button>
                 </form>
             </td>
-            <td>text</td>
           </tr>
-        @endforeach
-        
+        @endforeach    
       </tbody>
     </table>
   </div>
